@@ -1,3 +1,8 @@
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
 body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
@@ -10,4 +15,71 @@ body {
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+}
+.shared-section{
+  background-color: #1ABC9C;
+}
+
+
+.line-1{
+  background-color: #1A252F;
+  height: 4px;
+  width: 80px;
+}
+.line-2{
+  background-color: #fff;
+  height: 4px;
+  width: 80px;
+}
+
+/* !NAVBAR SECTION*/
+.navbar{
+  background-color: #2C3E50;
+}
+.active{
+  background-color: #1ABC9C;
+  border-radius: 10px;
+}
+ /*!FOOTER SECTION!*/
+.detalis{
+  background-color: #2C3E50;
+}
+.copyright{
+  background-color: #1A252F;
+}
+.icon i{
+  border: 1px solid white;
+  padding:10px;
+  border-radius: 50%;
+}
+
+/* ?CONTACT SECTION? */
+.form-control:focus{
+  border: none;
+ 
+  box-shadow: none;
+  
+}
+.btn-message:hover{
+  background-color: #1ABC9C;
+}
+.btn-message{
+  background-color: #1ABC9C;
+}
+
+
+/*!PORTFOLIO SECTION!*/
+.portfolio-item-layer{
+  background-color: #1abc9cd3;
+    position: absolute;
+    inset: 0% 0 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    cursor: pointer;
+    transition: opacity .5s;
+}
+.portfolio-item:hover .portfolio-item-layer{
+  opacity: 1;
 }
